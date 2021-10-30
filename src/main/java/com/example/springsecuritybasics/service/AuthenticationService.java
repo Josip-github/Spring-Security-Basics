@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 public class AuthenticationService implements AuthenticationProvider {
 
     private UserMapper userMapper;
+    private HashService hashService;
 
     @Override
     public Authentication authenticate(Authentication authentication) throws AuthenticationException {
